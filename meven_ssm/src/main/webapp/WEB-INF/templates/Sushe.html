@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>宿舍</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <td>宿舍Id</td>
+            <td>宿舍名称</td>
+            <td>宿舍地址</td>
+            <td>宿舍人数</td>
+        </tr>
+        <tr th:each="s:${susheList}">
+            <td th:text="${s.id}">1</td>
+            <td th:text="${s.name}">101</td>
+            <td th:text="${s.address}">北京市老人区</td>
+            <td th:text="${s.peoples}">2</td>
+        </tr>
+    </table>
+</body>
+</html>
