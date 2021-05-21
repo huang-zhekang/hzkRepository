@@ -24,7 +24,6 @@ public class Sushecontroller {
     @GetMapping("queryall")
     @ResponseBody
     public List<Sushe> queryall(){
-        System.out.println("哲康🐂🐂乓臭");
         return susheservice.queryAll();
     }
 
