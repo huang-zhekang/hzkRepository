@@ -24,6 +24,7 @@ public class Sushecontroller {
     @GetMapping("queryall")
     @ResponseBody
     public List<Sushe> queryall(){
+        //黄哲康
         return susheservice.queryAll();
     }
 
