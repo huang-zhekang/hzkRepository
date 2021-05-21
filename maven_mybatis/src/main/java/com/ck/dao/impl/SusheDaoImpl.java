@@ -14,7 +14,7 @@ import java.util.List;
  * @Date 2021/5/13 10:09
  */
 public class SusheDaoImpl implements SusheDao {
-//111
+//11
     public List<Sushe> queryAll() {
         SqlSession sqlSession = MybatisUtil.openSession(false);
         SusheDao susheDao = sqlSession.getMapper(SusheDao.class);
